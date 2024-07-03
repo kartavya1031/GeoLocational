@@ -75,7 +75,7 @@ fields.
 Expected Outcome
 You should have a pandas dataframe with the relevant parameters ready to go for analysis
 in a jupyter notebook. Something like this will do:
-Task 2
+# Task 2
 Data Exploration and Visualisation
 Now that we have our data, we need to understand it. A good way to do this is by visualising
 the data via graphs. Graphs help us quickly get a sense of the data, and are a much more
@@ -101,7 +101,7 @@ References
 Expected Outcome
 You should have a boxplot of your cleaned dataset, and a list of insights pertaining to the
 dataset.
-Task 3
+# Task 3
 Run KMeans Clustering on the data
 K Means Clustering will help us group locations based on the amenities located around
 them. For example, a location with a high amount of shops nearby will be labeled "Amenity
@@ -132,7 +132,7 @@ References
 Expected Outcome
 You should have the optimum K value for the dataset, and the parameters on which the
 clusters are differentiated.
-Task 4
+# Task 4
 Get Geolocational Data from Foursquare API
 Now that we know the best K value for our population, we need to get geolocational data
 from the Foursquare API to find these people some accomodation!
@@ -167,7 +167,7 @@ References
 Expected Outcome
 You should have a dataframe with the locations (in latitude, longitude) format, along with
 the counts of how many amenities are present around each location.
-Task 5
+# Task 5
 Plot the clustered locations on a map
 Now it's time to run K Means clustering on the data (finally!) and plot the results on a map.
 Note that here we are applying K means on the dataset of the locations which we chose,
