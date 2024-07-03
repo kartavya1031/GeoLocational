@@ -47,7 +47,7 @@ The FourSquare API data can be used for:
 Getting Started
 We need data to do data analysis! Fetch the data we need and set up your environment
 before you move on to data analysis.
-Requirements
+### Requirements
 • Head over to this link to get a dataset we'll be using. If you run into "too many
 requests", here's a drive link.
 • Note that you'll need both files, the csv and the document - the document explains the
@@ -61,18 +61,18 @@ as useful.
 • Extract the most relevant features into a pandas dataframe.
 • This process of Extracting the features, (and dealing with different kinds of values as
 well as NaN values) is known as Data Cleaning.
-References
+### References
 • Reading CSV Manual Page
 • How to load CSV into Jupyter
 • Data Cleaning - Methodology/Approach
 • Data Cleaning - Useful Tools
-Tips
+### Tips
 • Jupyter can be run on any OS, but for Windows, Anaconda provides the most
 hassle-free way of installing Jupyter.
 • You may want to use loc when doing data cleaning.
 • Non numeric fields are much harder to deal with effectively as compared to numeric
 fields.
-Expected Outcome
+### Expected Outcome
 You should have a pandas dataframe with the relevant parameters ready to go for analysis
 in a jupyter notebook. Something like this will do:
 # Task 2
@@ -83,7 +83,7 @@ user-friendly way of understanding data as compared to reading thousands of rows
 A good graph to look at distributed groups is a Boxplot. It can tell us at glance where the
 population is concentrated, and how the outliers compare to the average object in the
 group.
-Requirements
+### Requirements
 • To visualise the food_choices dataset you created in the previous task, plot a boxplot
 on the dataframe.
 • Refer to the codebook_food file to make sense of the Boxplot. Note down the general
@@ -94,11 +94,11 @@ account for both), and income (this affects the lifestyle of the person signific
 Bring it On!
 Box plots are just one way to visualise your data. Can you think of any other visualisation
 methods that might aid your analysis?
-References
+### References
 • Understanding Box Plots
 • Boxplots using Seaborn
 • Boxplots using Pandas
-Expected Outcome
+### Expected Outcome
 You should have a boxplot of your cleaned dataset, and a list of insights pertaining to the
 dataset.
 # Task 3
@@ -112,7 +112,7 @@ later.
 Note that here we are applying K means first on the dataset of the general population,
 which will help us organise the population into groups. Further down the line, we will apply
 K means again on a different dataset.
-Requirements
+### Requirements
 • Run KMeans clustering on the dataset you have. Use trial and error to figure out the
 best value of K. (Note: The best value of K is where the clusters are clearly demarcated
 on particular attributes, e.g. income)
@@ -121,22 +121,22 @@ a good idea to plot boxplots again to see if there's any visible demarcation bas
 different parameters.
 • Once you are settled on a K value, preserve the boxplots and jot down any insights you
 find. We'll need these later!
-Tip
+### Tip
 Income is usually a reliable way to differentiate people, as different classes of people tend
 to have different habits.
-References
+### References
 • K means Clustering
 • Finding an Optimum K Value
 • Boxplots using Seaborn
 • Boxplots using Pandas
-Expected Outcome
+### Expected Outcome
 You should have the optimum K value for the dataset, and the parameters on which the
 clusters are differentiated.
 # Task 4
 Get Geolocational Data from Foursquare API
 Now that we know the best K value for our population, we need to get geolocational data
 from the Foursquare API to find these people some accomodation!
-Requirements
+### Requirements
 • Make a free foursquare account and get your API credentials set up. (Note that there
 are limits on a free account, so be careful about calling the API!)
 • Set up your query in such a way that you can check for residential locations in a fixed
@@ -153,18 +153,18 @@ might look:
 • Clean up the data in the same way as before - drop the irrelevant values, handle the
 NaN values(if any) and summarise the results into a dataframe. Click here for a
 refresher if you need it.
-Tips
+### Tips
 • NaN values are okay, as long as you don't have too many in the dataframe. Pay
 attention to selecting the parameters you need first, before dealing with other aspects
 of Data Cleaning.
 • You will want to filter locations by distance. A shop 50 km away from your house isn't
 exactly useful!
-References
+### References
 • Foursquare API Docs
 • Search Endpoint Docs
 • What is a REST API?
 • Using Postman to Test API endpoints
-Expected Outcome
+### Expected Outcome
 You should have a dataframe with the locations (in latitude, longitude) format, along with
 the counts of how many amenities are present around each location.
 # Task 5
@@ -172,7 +172,7 @@ Plot the clustered locations on a map
 Now it's time to run K Means clustering on the data (finally!) and plot the results on a map.
 Note that here we are applying K means on the dataset of the locations which we chose,
 which will help us find the best location for each population group that we found in Task 3.
-Requirements
+### Requirements
 • Run K Means clustering on the dataset you prepared in the previous milestone, with
 the optimal K value you found.
 • Now that you have the results, it's time to visualise them. Using Folium, Plot your
